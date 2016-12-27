@@ -101,6 +101,8 @@ cache:
     ccache: true
     directories:
         - ~/.ethash
+before_install:
+    - source scripts/install_cmake.sh
 install:
     - ./scripts/install_deps.sh
 before_script:
